@@ -10,7 +10,7 @@ def create_item(api_url, api_key, id_key, item_name, column_replace):
         api_key: API key for monday
         column_replace: New data
         id_key: Value fot board Id
-        item_name : 
+        item_name : Give a new name to the new element
     Return:
 
     """
