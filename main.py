@@ -9,21 +9,21 @@ def main():
     """
     try:
         data = {
-        "Edad": "24",
-        "Fecha": "2025-08-02", 
-        "Nombre": "Héctor Navarro",
-        "Telefono" : "3342489386",
-        "Correo": "hmnm0007@gmail.com",
-        "Github": config.GIT_URL
+        "AGE": "24",
+        "DATE": "2025-08-02", 
+        "NAME": "Héctor Navarro",
+        "PHONE" : "3342489386",
+        "CORREO": "hmnm0007@gmail.com",
+        "GITHUB": config.GIT_URL
         }
 
         column_replace = {
-            config.COLUMS_ID["edad"]: str(data["Edad"]),
-            config.COLUMS_ID["fecha"]: {"date":data["Fecha"]},
-            config.COLUMS_ID["nombre"]:data["Nombre"],
-            config.COLUMS_ID["telefono"]:{"phone":data["Telefono"]},
-            config.COLUMS_ID["correo"]:{"email":data["Correo"],"text": "Correo Personal"},
-            config.COLUMS_ID["github"]:{"url":data["Github"], "text": "Link Repo"}
+            config.COLUMS_ID["edad"]: str(data["AGE"]),
+            config.COLUMS_ID["fecha"]: {"date":data["DATE"]},
+            config.COLUMS_ID["nombre"]:data["NAME"],
+            config.COLUMS_ID["telefono"]:{"phone":data["PHONE"]},
+            config.COLUMS_ID["correo"]:{"email":data["CORREO"],"text": "Correo Personal"},
+            config.COLUMS_ID["github"]:{"url":data["GITHUB"], "text": "Link Repo"}
         }
 
         result = create_item(api_url=config.API_URL, 
